@@ -1,0 +1,16 @@
+plugins {
+    id 'org.jetbrains.kotlin.jvm'
+}
+
+dependencies {
+    implementation project(':api')
+    implementation 'org.jetbrains.kotlin:kotlin-stdlib-jdk8'
+    implementation 'com.squareup.retrofit2:converter-gson:2.8.2'
+}
+
+compileKotlin {
+    kotlinOptions.jvmTarget = "13"
+}
+compileTestKotlin {
+    kotlinOptions.jvmTarget = "13"
+}

@@ -1,3 +1,5 @@
 rootProject.name = 'goodwanj'
 
 include 'model'
+include 'api'
+include 'examples'

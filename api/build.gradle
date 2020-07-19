@@ -10,7 +10,9 @@ repositories {
 }
 
 dependencies {
-    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8"
+    api project(':model')
+    implementation 'org.jetbrains.kotlin:kotlin-stdlib-jdk8'
+    api 'com.squareup.retrofit2:retrofit:2.8.2'
 }
 
 compileKotlin {
@@ -20,7 +22,3 @@ compileKotlin {
 compileTestKotlin {
     kotlinOptions.jvmTarget = "13"
 }
-
-//sourceSets {
-//    main.kotlin.srcDirs += 'src'
-//}
