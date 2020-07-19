@@ -1,0 +1,8 @@
+group 'ru.goodwan'
+version '1.0-SNAPSHOT'
+
+allprojects {
+    repositories {
+        jcenter()
+    }
+}
