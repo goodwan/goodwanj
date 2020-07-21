@@ -18,7 +18,7 @@ class BasicAuthInterceptor(username: String, password: String) : Interceptor {
 @ExperimentalUnsignedTypes
 fun main(args: Array<String>) {
     val client = OkHttpClient.Builder()
-            .addInterceptor(BasicAuthInterceptor("asysoev@mail.ru", ""))
+            .addInterceptor(BasicAuthInterceptor(args[0], args[1]))
             .build()
 
     val gson = GsonBuilder().setDateFormat("yyyy-MM-dd'T'HH:mm:ss").create()
